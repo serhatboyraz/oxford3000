@@ -114,7 +114,7 @@ function fetchWords() {
     wordLimit = parseInt(savedLimit);
     document.getElementById("setupOverlay").style.display = "none";
   }
-  fetch("https://gist.githubusercontent.com/CagriAldemir/b5313cc134c07dc9c41951999252231b/raw/5bc158702100297300934f7b6e9086f20cac31d4/oxford_3000.json")
+  fetch("https://raw.githubusercontent.com/serhatboyraz/oxford3000/refs/heads/main/oxford_3000.json")
     .then(res => res.json())
     .then(data => {
       allWords = data;
